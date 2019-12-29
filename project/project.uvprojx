@@ -52,7 +52,7 @@
           <OutputName>project</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
@@ -360,7 +360,7 @@
             </VariousControls>
           </Aads>
           <LDads>
-            <umfTarg>0</umfTarg>
+            <umfTarg>1</umfTarg>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <noStLib>0</noStLib>
@@ -369,7 +369,7 @@
             <TextAddressRange>0x08000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile></ScatterFile>
+            <ScatterFile>.\Objects\project.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -402,15 +402,70 @@
               <FileType>1</FileType>
               <FilePath>..\core\stm32\uart\src\uart.c</FilePath>
             </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\core\stm32\timer\src\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\core\stm32\flash\src\flash.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>boot</GroupName>
           <Files>
             <File>
-              <FileName>boot.c</FileName>
+              <FileName>sys.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\core\boot\src\boot.c</FilePath>
+              <FilePath>..\boot\src\sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys_boot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\boot\src\sys_boot.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>base</GroupName>
+          <Files>
+            <File>
+              <FileName>uart_wrapper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\core\base\uart_wrapper\src\uart_wrapper.c</FilePath>
+            </File>
+            <File>
+              <FileName>queue_buffer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\core\base\uart_wrapper\queue_buffer\src\queue_buffer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>com</GroupName>
+          <Files>
+            <File>
+              <FileName>com.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\core\com\src\com.c</FilePath>
+            </File>
+            <File>
+              <FileName>com_proxy.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\core\com\src\com_proxy.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lib</GroupName>
+          <Files>
+            <File>
+              <FileName>lib.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\core\lib\src\lib.c</FilePath>
             </File>
           </Files>
         </Group>

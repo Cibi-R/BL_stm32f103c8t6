@@ -1,14 +1,17 @@
-#ifndef __UART_CONFIG_H__
-#define __UART_CONFIG_H__
+#ifndef __LIB_H__
+#define __LIB_H__
 
 /******************************************************************************************************************************
- *												      Preprocessor Constants
+ *												      Function Declarations
  ******************************************************************************************************************************/
 
-/* Name USART is replaced with UART. */
-#define UART1    USART1
-#define UART2    USART2
-#define UART3    USART3
 
+/*
+ * @brief  : To 
+ * @para   : 
+ * @return : 
+ */
 
-#endif //__UART_CONFIG_H__
+extern uint8_t LIB_Evaluate_Checksum(uint8_t* Data, uint8_t Len);
+
+#endif //__LIB_H__
